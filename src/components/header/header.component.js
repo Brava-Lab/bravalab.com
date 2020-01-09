@@ -3,6 +3,7 @@ import { default as cx } from 'classnames';
 import PropTypes from 'prop-types';
 
 import Container from './../container/container.component'
+import Button from './../button/button.component'
 
 import styles from './header.module.scss';
 
@@ -14,7 +15,11 @@ const Header = ({
   <header className={ cx(styles.root, rest) }>
     <Container className={ styles.container }>
       <h2 className={ styles.title }>{ title }</h2>
-      { hasCallToAction ? <button className={ styles.button }>Hire Bravalab</button> : null }
+      { hasCallToAction ? <Button 
+        className={ styles.button }
+        to="/hire"
+        text="Hire Bravalab"
+      /> : null }
     </Container>
   </header>
 )
