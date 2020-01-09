@@ -2,10 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-const NotFoundPage = () => (
+const HireUsPage = () => (
   <Layout>
-    <h1>Not Found Page</h1>
+    <h1>Hire Us page</h1>
   </Layout>
 )
 
-export default NotFoundPage
+export default HireUsPage

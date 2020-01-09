@@ -2,10 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-const NotFoundPage = () => (
+const CarrersPage = () => (
   <Layout>
-    <h1>Not Found Page</h1>
+    <h1>Carrers page</h1>
   </Layout>
 )
 
-export default NotFoundPage
+export default CarrersPage

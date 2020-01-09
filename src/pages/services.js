@@ -2,10 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-const TeamPage = () => (
+const ServicesPage = () => (
   <Layout>
-    <h1>This is the Team</h1>
+    <h1>Services page</h1>
   </Layout>
 )
 
-export default TeamPage
+export default ServicesPage
