@@ -1,3 +1,22 @@
 .root {
-    padding: 32px;
+    background-color: #E51B22;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.logo {
+    margin: 0;
+    margin-right: 32px;
+    width: 32px;
+    filter: brightness(0) invert(1);
+}
+
+.copyright {
+    margin: 0;
+    color: #FFF;
 }

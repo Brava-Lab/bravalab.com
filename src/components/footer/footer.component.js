@@ -1,15 +1,21 @@
 import React from "react"
 
 import Container from './../container/container.component';
+import Logo from './../../images/brava-no-text.svg';
 
 import styles from './footer.module.scss';
 
-const Footer = () => (
-  <footer className={ styles.root }>
-    <Container className={ styles.container }>
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
 
-    </Container>
-  </footer>
-)
+  return (
+    <footer className={ styles.root }>
+      <Container className={ styles.container }>
+        <img className={ styles.logo } src={ Logo } />
+        <p className={ styles.copyright }>Copyright Bravalab© { currentYear } | All Rights Reserved</p>
+      </Container>
+    </footer>
+  )
+}
 
 export default Footer
