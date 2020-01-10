@@ -5,7 +5,7 @@ const typography = new Typography({
     bodyFontFamily: ['Montserrat', 'serif'],
     bodyWeight: '300',
     headerFontFamily: ['Montserrat', 'serif'],
-    headerWeight: '900',
+    headerWeight: '700',
     googleFonts: [{
         name: 'Montserrat',
         styles: [

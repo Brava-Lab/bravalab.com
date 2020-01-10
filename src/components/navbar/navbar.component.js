@@ -11,7 +11,7 @@ const Navbar = () => (
   <nav className={ styles.root }>
     <Container className={ styles.container }>
       <h1 className={ styles.logo }>
-        <Link to="/"><img className={ styles.logo } src={ Logo }/></Link>
+        <Link to="/"><img className={ styles.logo } src={ Logo } alt="Brava lab logo"/></Link>
       </h1>
       <ul className={ styles.list }>
         <li className={ styles.item }><Link to="/about">About</Link></li>

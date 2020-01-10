@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <footer className={ styles.root }>
       <Container className={ styles.container }>
-        <img className={ styles.logo } src={ Logo } />
-        <p className={ styles.copyright }>Copyright Bravalab© { currentYear } | All Rights Reserved</p>
+        <img className={styles.logo} src={Logo} alt="Brava lab logo"/>
+        <p className={ styles.copyright }>Copyright Brava-Lab © { currentYear } | All Rights Reserved</p>
       </Container>
     </footer>
   )
