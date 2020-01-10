@@ -15,10 +15,20 @@
 
 .title {
   text-align: center;
+  font-size: 36px;
+}
+
+.separator {
+  width: 80px;
+  background: #E51B22;
+  height: 2px;
 }
 
 .subtitle {
   text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  max-width: 560px;
 }
 
 .gutterTop {

@@ -1,12 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Helmet from 'react-helmet'
+import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Footer from '../components/footer/footer.component'
-import Navbar from '../components/navbar/navbar.component'
+import Footer from "../components/footer/footer.component"
+import Navbar from "../components/navbar/navbar.component"
 
-import styles from './layout.module.scss';
+import styles from "./layout.module.scss"
 
 import "../theme/_reset.scss"
 
@@ -26,8 +26,8 @@ const Layout = ({ children }) => {
       <Helmet
         title={data.site.siteMetadata.title}
         meta={[
-          { name: 'description', content: 'Sample' },
-          { name: 'keywords', content: 'sample, something' },
+          { name: "description", content: "Sample" },
+          { name: "keywords", content: "sample, something" },
         ]}
       >
         <html lang="en" />
@@ -35,11 +35,9 @@ const Layout = ({ children }) => {
 
       <Navbar />
 
-      <main className={ styles.root }>
-        { children }
-      </main>
-      
-      <Footer/>
+      <main className={styles.root}>{children}</main>
+
+      <Footer />
     </>
   )
 }

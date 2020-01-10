@@ -1,24 +1,24 @@
-import { default as cx } from 'classnames';
-import React from 'react';
+import { default as cx } from "classnames"
+import React from "react"
 
-import { BREAKPOINTS } from './../../theme/theme.constants';
+import { BREAKPOINTS } from "./../../theme/theme.constants"
 
-import styles from './container.module.scss';
+import styles from "./container.module.scss"
 
 const Container = ({
   children,
-  tag: Root = 'div',
+  tag: Root = "div",
   className,
-  size = 'xl',
+  size = "xl",
   ...rest
 }) => (
   <Root
-    className={ cx(styles.root, className) }
-    style={ { maxWidth: `${ BREAKPOINTS[size] }px` } }
-    { ...rest }>
-
-    { children }
+    className={cx(styles.root, className)}
+    style={{ maxWidth: `${BREAKPOINTS[size]}px` }}
+    {...rest}
+  >
+    {children}
   </Root>
-);
+)
 
-export default Container;
+export default Container
