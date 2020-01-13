@@ -15,7 +15,7 @@ const IndexPage = () => (
       hasCallToAction
     />
 
-    <WeAreSection />
+    <WeAreSection/>
     <TestimonialsSection />
     <ClientsSection />
     <ReadySection />
