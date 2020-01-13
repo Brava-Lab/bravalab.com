@@ -1,9 +1,10 @@
 import { default as cx } from "classnames"
 import React from "react"
+import { Link } from "gatsby";
 
 import styles from "./card.module.scss"
 
-const Card = ({ imageSrc, title, text, className, ...rest }) => {
+const Card = ({ imageSrc, title, text, className, to, ...rest }) => {
   const titleClassnames = cx(
     styles.title,
     { [styles.gutterBottom]: text },
@@ -11,7 +12,7 @@ const Card = ({ imageSrc, title, text, className, ...rest }) => {
   )
 
   return (
-    <div className={styles.root}>
+    <Link className={styles.root} to={ to }>
       <div className={styles.header}>
         {imageSrc ? <img className={styles.image} src={imageSrc} /> : null}
       </div>
@@ -19,7 +20,7 @@ const Card = ({ imageSrc, title, text, className, ...rest }) => {
         <h3 className={titleClassnames}>{title}</h3>
         {text ? <p className={styles.text}>{text}</p> : null}
       </div>
-    </div>
+    </Link>
   )
 }
 
