@@ -20,8 +20,8 @@ const testimonialsItems = TESTIMONIALS_STEPS.map((step, ix) => {
   )
 })
 
-const TestimonialsSection = () => (
-  <Section title="Testimonials" subtitle="What our clients say">
+const TestimonialsSection = (props) => (
+  <Section title="Testimonials" subtitle="What our clients say" { ...props }>
     <div className={styles.container}>{ testimonialsItems }</div>
   </Section>
 )

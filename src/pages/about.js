@@ -1,12 +1,20 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Header from "../components/header/header.component"
+import PeopleCultureImage from '../images/people-culture.jpg'
+import WhatWeDo from "../components/sections/what-we-do/what-we-do.component"
+import WhoWeAreSection from "../components/sections/who-we-are/who-we-are.component"
+import WhatWeStandForSection from "../components/sections/what-we-stand-for/what-we-stand-for.component"
 
 const AboutPage = () => (
-  // TODO: this page should have information about the company and the team
-
   <Layout>
-    <h1>About page</h1>
+    <Header
+      image={ PeopleCultureImage }
+      thin/>
+    <WhatWeDo gutterBoth/>
+    <WhatWeStandForSection grey/>
+    <WhoWeAreSection gutterBoth/>
   </Layout>
 )
 

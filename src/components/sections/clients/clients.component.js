@@ -14,11 +14,11 @@ const clientLogos = CLIENTS_STEPS.map((step, ix) => {
   )
 })
 
-const ClientsSection = () => (
+const ClientsSection = (props) => (
   <Section
     title="Clients"
     subtitle="Some of the amazing partners we've worked with"
-    grey
+    { ...props}
   >
     <div className={styles.container}>{ clientLogos }</div>
   </Section>
