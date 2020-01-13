@@ -1,12 +1,18 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import PeopleCultureImage from '../images/people-culture.jpg'
+import Header from "../components/header/header.component"
+import ContactSection from "../components/sections/contact/contact.component"
+import OfficeLocationSection from "../components/sections/office-location/office-location.component"
 
 const ContactPage = () => (
-  // TODO: this page should have a information about company location (maybe a map), contact information and a form.
-
   <Layout>
-    <h1>Contact Page</h1>
+    <Header
+      image={ PeopleCultureImage }
+      thin />
+    <OfficeLocationSection gutterBoth/>
+    <ContactSection gutterBottom />
   </Layout>
 )
 

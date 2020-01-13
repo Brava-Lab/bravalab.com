@@ -1,7 +1,20 @@
-.root {
+.form {
+  width: 100%;
   max-width: 480px;
   text-align: center;
-  margin: 32px;
-  padding: 26px 32px;
-  flex: 1 1 25%;
+  padding-top: 32px;
+}
+
+.group {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.label {
+
+}
+
+.input {
+  margin-left: 32px;
+  flex: 1;
 }

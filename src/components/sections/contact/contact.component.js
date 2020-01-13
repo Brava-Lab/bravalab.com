@@ -5,13 +5,13 @@ import Section from "../../section/section.component"
 // import styles from "./services.module.scss"
 import ContactForm from "../../contact-form/contact-form.component"
 
-const ContactSection = (props) => (
+const ContactSection = ({ withLinkedIn, ...rest }) => (
   <Section
     title="Lets get in touch"
     subtitle="Please fill the information below:"
-    { ...props }
+    { ...rest }
   >
-    <ContactForm withLinkedIn/>
+    <ContactForm withLinkedIn={ withLinkedIn }/>
   </Section>
 )
 
