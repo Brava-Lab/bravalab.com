@@ -1,7 +1,7 @@
 import React from "react"
 
 import Section from "../../section/section.component"
-import OfficeLocationImage from '../../../images/people-discussing.jpg'
+import MapImage from '../../../images/map.png'
 
 import styles from "./office-location.module.scss"
 
@@ -10,12 +10,16 @@ const OfficeLocationSection = (props) => (
     { ...props }
   >
     <div className={ styles.container }>
-      <div className={ styles.map }>
-        <img src={ OfficeLocationImage } alt="Office location map"/>
+      <div className={styles.map} style={{
+        backgroundImage: `url(${MapImage})`
+      }}>
       </div>
       <div className={ styles.body}>
         <ul>
-          <li></li>
+          <li>Carrer Napoles, 12223</li>
+          <li>New Building Of. 134</li>
+          <li>08013 Barcelona, España</li>
+          <li>+34 933 423 324</li>
         </ul>
       </div>
     </div>

@@ -13,6 +13,7 @@ const Section = ({
   gutterBottom,
   gutterTop,
   gutterBoth,
+  wide,
   ...rest
 }) => {
   const rootClassnames = cx(
@@ -20,7 +21,7 @@ const Section = ({
     {
       [styles.gutterTop]: gutterTop || gutterBoth,
       [styles.gutterBottom]: gutterBottom || gutterBoth,
-      [styles.grey]: grey === true,
+      [styles.grey]: grey,
     },
     className
   )
