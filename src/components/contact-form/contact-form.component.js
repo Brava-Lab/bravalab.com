@@ -1,27 +1,36 @@
+import { default as cx } from "classnames"
 import React from "react"
 
 import styles from "./contact-form.module.scss"
+import Button from "../button/button.component"
 
 const ContactForm = ({ withLinkedIn }) => {
   return (
-    <form className={ styles.form }>
-      <div className={ styles.group }>
-        <label className={styles.label} for="firstName">First Name</label>
-        <input className={styles.input} id="firstName" type="text"/>
-      </div>
-      <div className={styles.group}>
-        <label className={styles.label} for="lastName">Last Name</label>
-        <input className={styles.input} id="lastName" type="text"/>
-      </div>
-      <div className={styles.group}>
-        <label className={styles.label} for="email">Email</label>
-        <input className={styles.input} id="email" type="email"/>
-      </div>
-      { withLinkedIn ? <div className={styles.group}>
-        <label className={styles.label} for="linkedIn">LinkedIn Profile Link</label>
-        <input className={styles.input} id="linkedIn" type="text"/>
-      </div> : null }
-      <button type="submit">Send</button>
+    <form className={styles.form} action="https://getform.io/f/1195f84d-daeb-426f-be0f-0794eee51526" method="POST" encType="multipart/form-data">
+        <label className={styles.label}>
+          First Name
+          <input className={styles.input} name="firstName" type="text" />
+        </label>
+        <label className={styles.label}>
+          Last Name
+          <input className={styles.input} name="lastName" type="text" />
+        </label>
+        <label className={styles.label}>
+          Email
+          <input className={styles.input} name="email" type="email" />
+        </label>
+        
+      { withLinkedIn ? <label className={styles.label}>
+          LinkedIn Profile Link
+          <input className={styles.input} name="linkedIn" type="text" />
+        </label> : null }
+
+      { withLinkedIn ? <label className={ styles.fileLabel }>
+          Upload CV
+          <input className={ styles.fileInput } name="cv" type="file" />
+        </label> : null }
+      
+      <Button className={ styles.button } type="submit" text="Send"/>
     </form>
   )
 }
