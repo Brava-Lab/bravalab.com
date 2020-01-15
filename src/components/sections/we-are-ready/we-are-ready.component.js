@@ -2,15 +2,15 @@ import React from "react"
 
 import Section from "../../section/section.component"
 
-import styles from "./we-are.module.scss"
-import { WORK_STEPS } from "./we-are.constants"
+import styles from "./we-are-ready.module.scss"
+import { WORK_STEPS } from "./we-are-ready.constants"
 import Card from "../../card/card.component"
 
 const workItems = WORK_STEPS.map((step, ix) => {
   return <Card key={ix} {...step} />
 })
 
-const WeAreSection = (props) => (
+const WeAreReadySection = (props) => (
   <Section
     title="We are Brava!"
     subtitle="Since 2018, Brava helps startups scale their development teams."
@@ -20,4 +20,4 @@ const WeAreSection = (props) => (
   </Section>
 )
 
-export default WeAreSection
+export default WeAreReadySection

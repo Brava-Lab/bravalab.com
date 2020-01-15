@@ -7,7 +7,7 @@ import PeopleDiscussingImage from "../images/people-discussing.jpg"
 
 import TestimonialsSection from "../components/sections/testimonials/testimonials.component"
 import ClientsSection from "../components/sections/clients/clients.component"
-import WeAreSection from "../components/sections/we-are/we-are.component"
+import WeAreReadySection from "../components/sections/we-are-ready/we-are-ready.component"
 import ReadySection from "../components/sections/ready/ready.component"
 
 const IndexPage = () => (
@@ -18,7 +18,7 @@ const IndexPage = () => (
       hasCallToAction
     />
 
-    <WeAreSection gutterTop/>
+    <WeAreReadySection gutterTop/>
     <TestimonialsSection gutterBottom/>
     <ClientsSection grey/>
     <ReadySection gutterBoth/>
