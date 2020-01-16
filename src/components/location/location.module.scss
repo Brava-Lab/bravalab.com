@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+.map {
+  min-height: 400px;
+  flex: 1;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #464646;
+}
+
+.location {
+  margin-top: 32px;
+  
+  h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0;
+  }
+} 

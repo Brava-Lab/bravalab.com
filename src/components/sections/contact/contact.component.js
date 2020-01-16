@@ -1,17 +1,22 @@
+import { default as cx } from "classnames"
 import React from "react"
 
 import Section from "../../section/section.component"
 
-// import styles from "./services.module.scss"
+import styles from "./contact.module.scss"
 import ContactForm from "../../contact-form/contact-form.component"
+import Location from "../../location/location.component"
 
-const ContactSection = ({ withLinkedIn, ...rest }) => (
+const ContactSection = ({ withLinkedIn, withMap, subtitle, ...rest }) => (
   <Section
     title="Lets get in touch"
-    subtitle="Please fill the information below:"
+    subtitle={ subtitle }
     { ...rest }
   >
-    <ContactForm withLinkedIn={ withLinkedIn }/>
+    <div className={cx(styles.container, {[styles.noGrid]: !withMap})}>
+      { withMap ? <Location clasName={ styles.location }/> : null }
+      <ContactForm clasName={ styles.form } withLinkedIn={ withLinkedIn }/>
+    </div>
   </Section>
 )
 

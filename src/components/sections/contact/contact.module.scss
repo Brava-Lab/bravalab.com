@@ -1,5 +1,23 @@
 .container {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 128px;
+  grid-row-gap: 0px;
+}
+
+.noGrid {
+  display: block;
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.location {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.form {
+  grid-area: 1 / 1 / 2 / 3;
 }

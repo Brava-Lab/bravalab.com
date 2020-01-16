@@ -10,7 +10,11 @@ const CarrersPage = () => (
     <Header
       image={PeopleCultureImage}
       thin/>
-    <ContactSection gutterBoth withLinkedIn/>
+    <ContactSection
+      title="What to work with us?"
+      gutterBoth
+      withLinkedIn
+      subtitle="Let's connect! Please tell us something about yourself!" />
   </Layout>
 )
 

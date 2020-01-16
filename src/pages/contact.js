@@ -10,7 +10,8 @@ const ContactPage = () => (
     <Header
       image={ PeopleCultureImage }
       thin />
-    <ContactSection gutterBoth />
+    
+    <ContactSection gutterBoth withMap subtitle="Please fill the information below and send us your inquiry. Thank you so much!:"/>
   </Layout>
 )
 
