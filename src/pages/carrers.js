@@ -8,7 +8,7 @@ import Header from "../components/header/header.component"
 const CarrersPage = () => (
   <Layout>
     <Header
-      image={PeopleCultureImage}
+      image={ PeopleCultureImage }
       thin/>
     <ContactSection
       title="What to work with us?"

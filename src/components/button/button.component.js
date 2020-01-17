@@ -13,8 +13,8 @@ const Button = ({
   const Root = to ? Link : 'button';
 
   return (
-    <Root className={cx(styles.root, className)} to={to ? to : null} {...rest}>
-      {text}
+    <Root className={ cx(styles.root, className) } to={ to ? to : null } { ...rest }>
+      { text }
     </Root>
   )
 }

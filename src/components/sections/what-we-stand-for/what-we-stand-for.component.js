@@ -6,11 +6,7 @@ import { VALUES } from "./what-we-stand-for.constants"
 
 import styles from "./what-we-stand-for.module.scss"
 
-const values = VALUES.map((value, ix) => {
-  return (
-    <MemberCard member={ value } key={ix}/>
-  )
-})
+const values = VALUES.map((value, ix) => <MemberCard member={ value } key={ ix }/> )
 
 const WhatWeStandForSection = (props) => (
   <Section

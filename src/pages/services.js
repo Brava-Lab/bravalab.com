@@ -9,7 +9,7 @@ import ServicesSection from "../components/sections/services/services.component"
 const ServicesPage = () => (
   <Layout>
     <Header
-      image={PeopleCultureImage}
+      image={ PeopleCultureImage }
       thin />
     <ServicesSection gutterBoth/>
   </Layout>

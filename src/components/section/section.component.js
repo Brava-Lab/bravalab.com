@@ -29,13 +29,13 @@ const Section = ({
   )
 
   return (
-    <section className={rootClassnames} {...rest}>
-      <Container className={styles.container}>
-        {title ? <h2 className={styles.title}>{title}</h2> : null}
-        {title ? <hr className={styles.separator} /> : null}
-        {subtitle ? <h3 className={styles.subtitle}>{subtitle}</h3> : null}
+    <section className={ rootClassnames } { ...rest }>
+      <Container className={ styles.container }>
+        { title ? <h2 className={ styles.title }>{ title }</h2> : null }
+        { title ? <hr className={ styles.separator } /> : null }
+        { subtitle ? <h3 className={ styles.subtitle }>{ subtitle }</h3> : null }
 
-        {children}
+        { children }
       </Container>
     </section>
   )

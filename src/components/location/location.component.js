@@ -7,12 +7,12 @@ import styles from "./location.module.scss"
 
 const Location = ({ className }) => {
   return (
-    <div className={ cx(styles.container, className)}>
-      <div className={styles.map} style={{
+    <div className={ cx(styles.container, className) }>
+      <div className={ styles.map } style={ {
         backgroundImage: `url(${ MapImage })`
-      }}>
+      } }>
       </div>
-      <div className={styles.location}>
+      <div className={ styles.location }>
         <h3>Brava lab</h3>
         <p>Carrer lorem ipsum, 1337</p>
         <p>Some Cool Building Of. 4554</p>

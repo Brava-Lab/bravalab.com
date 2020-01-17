@@ -3,8 +3,6 @@ import React from "react"
 import Section from "../../section/section.component"
 import Button from "../../button/button.component"
 
-// import styles from "./ready.module.scss"
-
 const ReadySection = (props) => (
   <Section
     title="We are ready"

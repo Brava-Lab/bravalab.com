@@ -12,13 +12,13 @@ const Card = ({ imageSrc, title, text, className, to, ...rest }) => {
   )
 
   return (
-    <Link className={styles.root} to={ to }>
-      <div className={styles.header}>
-        {imageSrc ? <img className={styles.image} src={imageSrc} alt={ title }/> : null}
+    <Link className={ styles.root } to={ to }>
+      <div className={ styles.header }>
+        { imageSrc ? <img className={ styles.image } src={ imageSrc } alt={ title }/> : null }
       </div>
-      <div className={styles.body}>
-        <h3 className={titleClassnames}>{title}</h3>
-        {text ? <p className={styles.text}>{text}</p> : null}
+      <div className={ styles.body }>
+        <h3 className={ titleClassnames }>{ title }</h3>
+        { text ? <p className={ styles.text}>{ text }</p> : null }
       </div>
     </Link>
   )

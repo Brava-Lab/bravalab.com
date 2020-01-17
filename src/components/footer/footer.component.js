@@ -9,11 +9,11 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className={styles.root}>
-      <Container className={styles.container}>
-        <img className={styles.logo} src={Logo} alt="Brava lab logo" />
-        <p className={styles.copyright}>
-          Copyright Brava-Lab © {currentYear} | All Rights Reserved
+    <footer className={ styles.root }>
+      <Container className={ styles.container }>
+        <img className={ styles.logo } src={ Logo } alt="Brava lab logo" />
+        <p className={ styles.copyright }>
+          Copyright Brava-Lab © { currentYear } | All Rights Reserved
         </p>
       </Container>
     </footer>

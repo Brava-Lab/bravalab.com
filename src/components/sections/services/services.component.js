@@ -6,9 +6,7 @@ import styles from "./services.module.scss"
 import { WORK_STEPS } from "./services.constants"
 import Card from "../../card/card.component"
 
-const workItems = WORK_STEPS.map((step, ix) => {
-  return <Card key={ix} {...step} />
-})
+const workItems = WORK_STEPS.map((step, ix) => <Card key={ ix } { ...step } /> )
 
 const ServicesSection = (props) => (
   <Section
@@ -16,7 +14,7 @@ const ServicesSection = (props) => (
     subtitle="Some text related to our services"
     { ...props }
   >
-    <div className={styles.container}>{workItems}</div>
+    <div className={ styles.container }>{ workItems }</div>
   </Section>
 )
 

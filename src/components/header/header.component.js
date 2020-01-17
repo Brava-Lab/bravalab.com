@@ -14,11 +14,11 @@ const Header = ({ title, hasCallToAction, thin, image, ...rest }) => (
     style={ {
       backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${ image })`
   } }>
-    <Container className={styles.container}>
-      <h2 className={styles.title}>{title}</h2>
-      {hasCallToAction ? (
-        <Button className={styles.button} to="/hire" text="Hire Bravalab" />
-      ) : null}
+    <Container className={ styles.container }>
+      <h2 className={ styles.title }>{ title }</h2>
+      { hasCallToAction ? (
+        <Button className={ styles.button } to="/hire" text="Hire Bravalab" />
+      ) : null }
     </Container>
   </header>
 )

@@ -5,24 +5,22 @@ import Section from "./../../section/section.component"
 
 import styles from "./testimonials.module.scss"
 
-const testimonialsItems = TESTIMONIALS_STEPS.map((step, ix) => {
-  return (
-    <div key={ix} className={ styles.root }>
-      <p className={ styles.quote }>"{ step.text }"</p>
-      <div className={ styles.body }>
-        <div className={ styles.avatar } style={ {
-          backgroundImage: `url(${step.imageSrc})`
-        } }></div>
-        <p className={styles.text}><strong>{step.name}</strong></p>
-        <p className={ styles.text }>{ `${ step.position }, ${ step.company }` }</p>
-      </div>
+const testimonialsItems = TESTIMONIALS_STEPS.map((step, ix) => (
+  <div key={ix} className={ styles.root }>
+    <p className={ styles.quote }>"{ step.text }"</p>
+    <div className={ styles.body }>
+      <div className={ styles.avatar } style={ {
+        backgroundImage: `url(${step.imageSrc })`
+      } }></div>
+      <p className={ styles.text }><strong>{ step.name }</strong></p>
+      <p className={ styles.text }>{ `${ step.position }, ${ step.company }` }</p>
     </div>
-  )
-})
+  </div>
+))
 
 const TestimonialsSection = (props) => (
   <Section title="Testimonials" subtitle="What our clients say" { ...props }>
-    <div className={styles.container}>{ testimonialsItems }</div>
+    <div className={ styles.container }>{ testimonialsItems }</div>
   </Section>
 )
 

@@ -13,11 +13,11 @@ const Container = ({
   ...rest
 }) => (
   <Root
-    className={cx(styles.root, className)}
-    style={{ maxWidth: `${BREAKPOINTS[size]}px` }}
-    {...rest}
+    className={ cx(styles.root, className) }
+    style={ { maxWidth: `${ BREAKPOINTS[size] }px` } }
+    { ...rest }
   >
-    {children}
+    { children }
   </Root>
 )
 
