@@ -1,11 +1,11 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Container from "../components/container/container.component"
+import NotFoundSection from "../components/sections/not-found/not-found.component"
 
 const NotFoundPage = () => (
-  <Layout>
-    <Container>Not Found Page</Container>
+  <Layout noNavbar>
+    <NotFoundSection/>
   </Layout>
 )
 

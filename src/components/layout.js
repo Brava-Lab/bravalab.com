@@ -10,7 +10,7 @@ import styles from "./layout.module.scss"
 
 import "../theme/_reset.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, noNavbar }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         <html lang="en" />
       </Helmet>
 
-      <Navbar />
+      { noNavbar ? null : <Navbar />}
 
       <main className={styles.root}>{children}</main>
 
