@@ -1,30 +1,30 @@
-import JohnDoeImage from "./../../../images/john-doe.png"
-import MartinMcFlyImage from "./../../../images/martin-macfly.png"
+import WomanImage from "./../../../images/woman-placeholder.png"
+import ManImage from "./../../../images/man-placeholder.png"
 
 export const TEAM_MEMBERS = [
   {
-    imageSrc: JohnDoeImage,
-    name: "John Doe",
+    imageSrc: ManImage,
+    name: "Gordon Ryan",
     position: "CEO & Co-Founder",
   }, {
-    imageSrc: MartinMcFlyImage,
-    name: "Martin McFly",
+    imageSrc: ManImage,
+    name: "Lucas Barbosa",
     position: "CTO & Co-Founder",
   }, {
-    imageSrc: MartinMcFlyImage,
-    name: "Martin McFly",
+    imageSrc: WomanImage,
+    name: "Bia Basilio",
     position: "Marketing Manager", 
   }, {
-    imageSrc: JohnDoeImage,
-    name: "John Doe",
+    imageSrc: ManImage,
+    name: "Keenan Cornelius",
     position: "Front-end Engineer",
   }, {
-    imageSrc: JohnDoeImage,
-    name: "John Doe",
+    imageSrc: ManImage,
+    name: "John Hinger",
     position: "Software Arquitect",
   }, {
-    imageSrc: MartinMcFlyImage,
-    name: "Martin McFly",
+    imageSrc: ManImage,
+    name: "Marcelo Garcia",
     position: "Back-end Engineer",
   },
 ]

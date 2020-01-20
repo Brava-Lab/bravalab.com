@@ -1,24 +1,23 @@
-import JohnDoeImage from "./../../../images/john-doe.png"
-import MartinMcFlyImage from "./../../../images/martin-macfly.png"
+import PlaceholderImage from "./../../../images/placeholder.png"
 
 export const VALUES = [
   {
-    imageSrc: JohnDoeImage,
-    name: "Code excellence",
+    imageSrc: PlaceholderImage,
+    name: "Pursue Excellence",
   }, {
-    imageSrc: MartinMcFlyImage,
-    name: "Other Value",
+    imageSrc: PlaceholderImage,
+    name: "Remote Teamwork",
   }, {
-    imageSrc: MartinMcFlyImage,
-    name: "Another Value",
+    imageSrc: PlaceholderImage,
+    name: "Personal Development",
   }, {
-    imageSrc: JohnDoeImage,
-    name: "One more value",
+    imageSrc: PlaceholderImage,
+    name: "Commitment to Clients",
   }, {
-    imageSrc: JohnDoeImage,
-    name: "One more to make it 5",
+    imageSrc: PlaceholderImage,
+    name: "Diversity",
   }, {
-    imageSrc: JohnDoeImage,
-    name: "And the last one",
+    imageSrc: PlaceholderImage,
+    name: "Impact",
   },
 ]

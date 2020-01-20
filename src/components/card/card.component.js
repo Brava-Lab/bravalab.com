@@ -11,8 +11,15 @@ const Card = ({ imageSrc, title, text, className, to, ...rest }) => {
     className
   )
 
+  const rootClassNames = cx(
+    styles.root,
+    { [styles.clickable]: to },
+  );
+
+  const Root = to ? Link : 'div';
+  
   return (
-    <Link className={ styles.root } to={ to }>
+    <Root className={ rootClassNames } to={ to }>
       <div className={ styles.header }>
         { imageSrc ? <img className={ styles.image } src={ imageSrc } alt={ title }/> : null }
       </div>
@@ -20,7 +27,7 @@ const Card = ({ imageSrc, title, text, className, to, ...rest }) => {
         <h3 className={ titleClassnames }>{ title }</h3>
         { text ? <p className={ styles.text}>{ text }</p> : null }
       </div>
-    </Link>
+    </Root>
   )
 }
 

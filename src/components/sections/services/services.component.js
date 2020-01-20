@@ -11,7 +11,7 @@ const workItems = WORK_STEPS.map((step, ix) => <Card key={ ix } { ...step } /> )
 const ServicesSection = (props) => (
   <Section
     title="We work with you, we work for you!"
-    subtitle="Some text related to our services"
+    subtitle="Since 2018, Brava helps startups scale their development teams."
     { ...props }
   >
     <div className={ styles.container }>{ workItems }</div>
