@@ -1,5 +1,3 @@
-import HireDevelopersImage from "./../../../images/people-discussing.jpg"
-
 export const WORK_STEPS = [
   {
     title: 'We\'ll join your team.',
