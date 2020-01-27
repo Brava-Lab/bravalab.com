@@ -9,9 +9,18 @@ import TestimonialsSection from "../components/sections/testimonials/testimonial
 import ClientsSection from "../components/sections/clients/clients.component"
 import WeAreReadySection from "../components/sections/we-are-ready/we-are-ready.component"
 import ReadySection from "../components/sections/ready/ready.component"
+import SEO from "../components/seo/seo.component"
+import { SITE_TITLE } from "../components/seo/seo.constants"
+
+const seo = {
+  title: `${ SITE_TITLE } | Home`,
+  description: 'We provide high-performing, on-demand teams of developers for leading brands.',
+  schema: null,
+}
 
 const IndexPage = () => (
   <Layout>
+    <SEO data={ seo } />
     <Header
       title="We provide high-performing, on-demand teams of developers for leading brands."
       image={ PeopleDiscussingImage }

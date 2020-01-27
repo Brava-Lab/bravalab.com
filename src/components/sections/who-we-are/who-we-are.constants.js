@@ -1,29 +1,29 @@
-import WomanImage from "./../../../images/woman-placeholder.png"
-import ManImage from "./../../../images/man-placeholder.png"
+// import WomanImage from "./../../../images/woman-placeholder.png"
+import PlaceholderImage from "./../../../images/placeholder.png"
 
 export const TEAM_MEMBERS = [
   {
-    imageSrc: ManImage,
+    imageSrc: PlaceholderImage,
     name: "Gordon Ryan",
     position: "CEO & Co-Founder",
   }, {
-    imageSrc: ManImage,
+    imageSrc: PlaceholderImage,
     name: "Lucas Barbosa",
     position: "CTO & Co-Founder",
   }, {
-    imageSrc: WomanImage,
+    imageSrc: PlaceholderImage,
     name: "Bia Basilio",
     position: "Marketing Manager", 
   }, {
-    imageSrc: ManImage,
+    imageSrc: PlaceholderImage,
     name: "Keenan Cornelius",
     position: "Front-end Engineer",
   }, {
-    imageSrc: ManImage,
+    imageSrc: PlaceholderImage,
     name: "John Hinger",
     position: "Software Arquitect",
   }, {
-    imageSrc: ManImage,
+    imageSrc: PlaceholderImage,
     name: "Marcelo Garcia",
     position: "Back-end Engineer",
   },
