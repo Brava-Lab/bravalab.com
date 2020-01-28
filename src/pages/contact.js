@@ -7,8 +7,6 @@ import ContactSection from "../components/sections/contact/contact.component"
 import SEO from "../components/seo/seo.component"
 import { SITE_TITLE } from "../components/seo/seo.constants"
 
-const title = `${SITE_TITLE} | Contact`
-
 const breadcrumb = {
   '@type': 'ListItem',
   item: {
