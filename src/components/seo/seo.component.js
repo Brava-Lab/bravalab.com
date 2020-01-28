@@ -22,7 +22,7 @@ const SEO = ({
     },
   ]
 
-  pageElement && breadcrumbList.push(pageElement)
+  pageElement && itemListElement.push(pageElement)
 
   const breadcrumb = {
     '@context': 'http://schema.org',
