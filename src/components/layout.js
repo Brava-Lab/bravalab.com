@@ -4,15 +4,11 @@ import PropTypes from "prop-types"
 import Footer from "../components/footer/footer.component"
 import Navbar from "../components/navbar/navbar.component"
 
-import styles from "./layout.module.scss"
-
-import "../theme/_reset.scss"
-
 const Layout = ({ children, noNavbar }) => (
   <>
     { noNavbar ? null : <Navbar /> }
 
-    <main className={ styles.root }>{ children }</main>
+    <main>{ children }</main>
 
     <Footer />
   </>

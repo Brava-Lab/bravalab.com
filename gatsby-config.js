@@ -5,7 +5,12 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        data: '@import "./src/styles/_reset.scss", "./src/styles/_breakpoints.scss", "./src/styles/_mixins.scss";',
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
