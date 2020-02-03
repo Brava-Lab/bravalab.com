@@ -14,8 +14,8 @@ const ContactSection = ({ withLinkedIn, withMap, subtitle, ...rest }) => (
     { ...rest }
   >
     <div className={ cx(styles.container, { [styles.noGrid]: !withMap }) }>
-      { withMap ? <Location clasName={ styles.location }/> : null }
-      <ContactForm clasName={ styles.form } withLinkedIn={ withLinkedIn }/>
+      { withMap ? <Location className={ styles.location }/> : null }
+      <ContactForm className={ styles.form } withLinkedIn={ withLinkedIn }/>
     </div>
   </Section>
 )

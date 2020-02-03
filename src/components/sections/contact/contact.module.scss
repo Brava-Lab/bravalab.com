@@ -1,11 +1,16 @@
 .container {
   width: 100%;
   margin-top: 64px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 128px;
-  grid-row-gap: 0px;
+
+  @include md {
+    width: 100%;
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 128px;
+    grid-row-gap: 0px;
+  }
 }
 
 .noGrid {
@@ -15,9 +20,13 @@
 }
 
 .location {
-  grid-area: 1 / 1 / 2 / 2;
+  margin-bottom: 64px;
+  
+  @include md {
+    margin-bottom: 0px
+  }
 }
 
 .form {
-  grid-area: 1 / 1 / 2 / 3;
+  // grid-area: 1 / 1 / 2 / 3;
 }

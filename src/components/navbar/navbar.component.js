@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 
 import Container from "./../container/container.component"
 import Logo from "./../../images/brava-text-landscape.svg"
+import LogoWithoutText from "./../../images/brava-no-text.svg"
 
 import styles from "./navbar.module.scss"
 
@@ -12,7 +13,7 @@ const Navbar = () => (
     <Container className={ styles.container }>
       <h1 className={ styles.logo }>
         <Link to="/">
-          <img className={ styles.logo } src={ Logo } alt="Brava lab logo" />
+          <img className={ styles.logo } src={ Logo } alt="Brava Labs logo" />
         </Link>
       </h1>
       <ul className={ styles.list }>
